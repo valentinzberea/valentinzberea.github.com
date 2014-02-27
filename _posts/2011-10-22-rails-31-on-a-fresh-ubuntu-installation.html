@@ -1,0 +1,34 @@
+--- 
+permalink: /rails-31-on-a-fresh-ubuntu-installation/index.html
+layout: post
+title: rails 3.1 on a fresh ubuntu installation
+published: true
+categories: []
+
+---
+<div>Install rvm. This is a very informative blog post about the steps to be made:&nbsp;<a href="http://www.unfoldingcode.com/2011/05/using-rvm-to-install-rails-31-on-ubuntu.html">http://www.unfoldingcode.com/2011/05/using-rvm-to-install-rails-31-on-ubuntu.html</a></div>
+<div>
+<p />
+<div>When you try: gem install rails most certainly you will get "no such file to load -- zlib"</div>
+<div>I wish you find a fast solution on this error. However what worked for me was to follow the steps from this response:&nbsp;<a href="http://stackoverflow.com/questions/1250329/has-anyone-tried-installing-ruby-rubygems-from-source-on-ubuntu-preferably-un/7126813#7126813">http://stackoverflow.com/questions/1250329/has-anyone-tried-installing-ruby-rubygems-from-source-on-ubuntu-preferably-un/7126813#7126813</a></div>
+<p />
+<div>Why the blog post? Some weeks ago I bought myself a very good book:&nbsp;<a href="http://www.manning.com/katz/">Rails 3 in Action</a>. My learning progress can be checked here:&nbsp;<a href="https://github.com/valentinzberea/tracker">https://github.com/valentinzberea/tracker</a>. It's really a great experience going through this book. I like very much about it the way testing is treated. I've started the book project on Windows after rails was setup with&nbsp;<a href="http://railsinstaller.org/">http://railsinstaller.org/</a>. Last night I've decided to continue work on a Ubuntu virtual machine.</div>
+<p />
+<div>More error messages:</div>
+<p />
+<div>"ERROR: &nbsp;Error installing sqlite3-ruby" "sqlite3.h is missing."</div>
+<div>I've found my answer here:&nbsp;<a href="http://stackoverflow.com/questions/3458602/sqlite3-ruby-install-error-on-ubuntu/3649005#3649005">http://stackoverflow.com/questions/3458602/sqlite3-ruby-install-error-on-ubuntu/3649005#3649005</a></div>
+<p />
+<div>"Could not find a JavaScript runtime." when you try "rails server"</div>
+<div>sudo apt-get install nodejs</div>
+<p />
+<div>Somehow related: "Segmentation fault" when you try to install janus vim configuration</div>
+<div>This worked for me:</div>
+<div>
+<p />
+<div><span style="line-height: 16px; font-size: small; color: #000000;">rvm use 1.8.7&nbsp;</span></div>
+<div><span style="font-size: small; color: #000000;"><span style="line-height: 16px;">cd ~/.vim/ruby/command-t<br /></span><span style="line-height: 16px;">make clean<br />ruby extconf.rb<br />make</span></span></div>
+<p />
+<div>After you get the "segmentation fault" you will fix the command-t plugin then run gvim. That's it.</div>
+</div>
+</div>
