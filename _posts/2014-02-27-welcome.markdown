@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Welcome!"
+date:   2014-02-27 11:51:53
+categories: welcome update
+---
+
+{% highlight coffeescript %}
+console.log "Welcome!"
+#=> prints 'Welcome!' in console.
+{% endhighlight %}
