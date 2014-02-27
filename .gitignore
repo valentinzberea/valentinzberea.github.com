@@ -1,15 +1,1 @@
-<<<<<<< HEAD
 _site
-=======
-_site/*
-*.*~
-_theme_packages/*
-
-Thumbs.db
-.DS_Store
-
-!.gitkeep
-
-.rbenv-version
-.rvmrc
->>>>>>> 37a666b69159b7ad400330ff3008d391553130c4
