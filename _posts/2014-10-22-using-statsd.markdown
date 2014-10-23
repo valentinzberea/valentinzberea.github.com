@@ -5,7 +5,7 @@ date:   2014-10-22 12:19:17
 categories: statsd latency graphite
 ---
 
-On [code.hootsuite.com](http://code.hootsuite.com) you can find the latest article about measuring latency with statsd.
+On [code.hootsuite.com](http://code.hootsuite.com/using-statsd-to-monitor-service-performance/) you can find an article I've written about measuring a service latency with statsd.
 
 <a href="http://code.hootsuite.com" target="_blank">
     <img src="https://dl.dropboxusercontent.com/s/lbveexxejgdk45o/Screenshot%202014-10-13%2011.41.06.png?dl=0" width="700px"/>
