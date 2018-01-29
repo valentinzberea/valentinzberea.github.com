@@ -1,6 +1,4 @@
 source "https://rubygems.org"
 ruby "2.2.3"
 
-gem "jekyll"
-gem "pygments.rb"
-gem "redcarpet"
+gem 'github-pages', group: :jekyll_plugins
